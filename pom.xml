@@ -385,7 +385,7 @@
         <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
 		<maven-nexus-staging-plugin.version>1.6.8</maven-nexus-staging-plugin.version>
 		<lombok.version>1.18.12</lombok.version>
-			<sudytech-sdk.version>4.0.6.9</sudytech-sdk.version>
+		<pac4j-uniauth.version>1.0.0-SNAPSHOT</pac4j-uniauth.version>
 	</properties>
 	
 	<dependencyManagement>
@@ -399,9 +399,9 @@
 			</dependency>
 			
 			<dependency>
-			  	<groupId>com.sudytech</groupId>
-			  	<artifactId>sudytech-mids-mobile-api</artifactId>
-			  	<version>${sudytech-sdk.version}</version>
+			 	<groupId>com.github.hiwepy</groupId>
+				<artifactId>pac4j-uniauth</artifactId>
+			    <version>${pac4j-uniauth.version}</version>
 			</dependency>
 			 
 		</dependencies>
@@ -414,10 +414,11 @@
 		    <groupId>org.projectlombok</groupId>
 		    <artifactId>lombok</artifactId>
 		    <scope>compile</scope>
-		</dependency>	                         
-		<dependency>
-		  	<groupId>com.sudytech</groupId>
-		  	<artifactId>sudytech-mids-mobile-api</artifactId>
+		</dependency>
+		
+	 	<dependency>
+		 	<groupId>com.github.hiwepy</groupId>
+			<artifactId>pac4j-uniauth</artifactId>
 		</dependency>
 		
 	</dependencies>
